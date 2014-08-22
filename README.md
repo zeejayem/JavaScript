@@ -7,4 +7,4 @@ http://zarahmcintosh.com/ITC298/A2/ - JSON Dom insertion
 
 http://zarahmcintosh.com/ITC298/A3/ - JSON objects with sort
 
-http://zarahmcintosh.com/ITC298/A4/Z/ - Handlebars, Bootstrap, JQuery
+http://zarahmcintosh.com/ITC298/A7/Z/ - JavaScript Add Remove
