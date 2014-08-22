@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<style>
+		body 
+		{
+			padding-top: 70px;
+		}
+	</style>
+</head>
+<title>A5 Solution for A6</title>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<a class="navbar-brand" href="#">Olympic GSP Family</a>
+			<ul class="nav navbar-nav">
+				<li><a onclick="staticObj.display()" href="#">Everyone</a></li>
+				<li><a onclick="staticObj.displayCart()" href="#">Selected dogs</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div id='outlet'></div>
+	</div>
+	
+	
+	<!-- template goes here:  -->
+	<script id="itemTemplate" type="text/x-handlebars-template">
+		<div class="col-md-3 item">
+		<div class="panel panel-default">
+		<div class="panel-heading" class="hide">Call Name: {{callname}}</div>
+			<div class="panel-body">
+				<div>Registered Name: {{registeredname}}</div>
+				<div>Species: {{species}}</div>
+				<div>Breed: {{breed}}</div>
+				<div>Color: {{color}}</div>
+				<div>Gender: {{gender}}</div>
+				<div>Birthdate: {{birthdate}}</div>
+				<div>Pre Titles: {{pretitles}}</div>
+				<div>Post Titles: {{posttitles}}</div>
+				<button onclick="staticObj.addToCart('{{id}}')">Add</button>
+		</div></div></div>
+	</script>
+	<!-- end of template -->
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
